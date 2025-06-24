@@ -178,10 +178,19 @@ function addSpaces(array) {
 }
 
 export function setBoard() {
-    for (let i = 0; i < 10; i++) {
-        if (populateBoard()) break;
-        else reset();
+    while (true) {
+        for (let i = 0; i < 10; i++) {
+            if (populateBoard()) break;
+            else reset();
+        }
+        addSpaces(array);
+        if (
+            array[0].reduce((accumulator, value) => accumulator + value, 0) ===
+            0
+        ) {
+            reset();
+            continue;
+        } else break;
     }
-    addSpaces(array);
     return array;
 }
