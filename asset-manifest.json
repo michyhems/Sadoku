@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Sadoku/static/css/main.5a32511a.css",
-    "main.js": "/Sadoku/static/js/main.39b7bd1d.js",
+    "main.css": "/Sadoku/static/css/main.d64b8f8d.css",
+    "main.js": "/Sadoku/static/js/main.75717f39.js",
     "static/js/453.843b27a3.chunk.js": "/Sadoku/static/js/453.843b27a3.chunk.js",
-    "static/media/NightBackground.png": "/Sadoku/static/media/NightBackground.8097d766f85409a18ddf.png",
-    "static/media/DayBackground.png": "/Sadoku/static/media/DayBackground.4a10eb8601edbd44ecdb.png",
+    "static/media/NightBackground.jpeg": "/Sadoku/static/media/NightBackground.e48ace96d770ff2cf0db.jpeg",
+    "static/media/DayBackground.jpeg": "/Sadoku/static/media/DayBackground.72d7e9381dbb8c231e3d.jpeg",
     "index.html": "/Sadoku/index.html",
-    "main.5a32511a.css.map": "/Sadoku/static/css/main.5a32511a.css.map",
-    "main.39b7bd1d.js.map": "/Sadoku/static/js/main.39b7bd1d.js.map",
+    "main.d64b8f8d.css.map": "/Sadoku/static/css/main.d64b8f8d.css.map",
+    "main.75717f39.js.map": "/Sadoku/static/js/main.75717f39.js.map",
     "453.843b27a3.chunk.js.map": "/Sadoku/static/js/453.843b27a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a32511a.css",
-    "static/js/main.39b7bd1d.js"
+    "static/css/main.d64b8f8d.css",
+    "static/js/main.75717f39.js"
   ]
 }
