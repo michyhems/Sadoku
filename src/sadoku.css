@@ -1,10 +1,10 @@
 body{
-    background-image: url("./images/NightBackground.png");
+    background-image: url("./images/NightBackground.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #daytime{
-    background-image: url("./images/DayBackground.png");
+    background-image: url("./images/DayBackground.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     width:100%;
@@ -25,7 +25,7 @@ body{
     position: absolute;
     width:40%;
     margin-left: 30%;
-    margin-top: 20%;
+    margin-top: 21%;
     display: none;
     color: blue;
 }
@@ -39,7 +39,7 @@ body{
     border: solid grey 2px;
     margin:auto;
     aspect-ratio: 1 / 1;
-    margin-top: 3%;
+    margin-top: 6%;
     float: left;
     margin-left: 6%;
     background-color: rgba(255,255,255,0.5) !important;
@@ -60,7 +60,7 @@ body{
 
 #modeSwitch{
     margin-left: 57%;
-    margin-top: 5%;
+    margin-top: 8%;
     height: fit-content;
     position: absolute;
 }
@@ -69,14 +69,12 @@ body{
     width:25%;
     aspect-ratio: 1 / 1;
     margin-left: 57%;
-    margin-top: 18%;
+    margin-top: 21%;
     position: absolute;
 }
-.key{
-    background-image: linear-gradient(#a7a7a7, #dadada);
+
+.lightKey, .darkKey{
     border: transparent;
-    color: #4c4c4c;
-    border-color: white;
     border-radius: 10%;
     margin-top: 4%;
     width: 96%;
@@ -87,11 +85,45 @@ body{
     display: flex;
 }
 
-.key:hover{
+.lightKey{
+    background-image: linear-gradient(#a7a7a7, #dadada);
+    color: #4c4c4c;
+    border-color: white;
+}
+
+.darkKey{
+    background-image: linear-gradient(#1E1F1F,#4C4E4E);
+    color: white;
+}
+.lightKey:hover{
     cursor: pointer;
 }
 
-.key:active{
+.darkKey:hover{
+    cursor: pointer;
+}
+
+.lightKey:active{
     background-image: linear-gradient(#a7a7a7, #a7a7a7);
 }
 
+
+.darkKey:active{
+    background-image: linear-gradient(#1E1F1F, #1E1F1F);
+}
+
+.instructions{
+    color: black;
+    position: absolute;
+    width: 25%;
+    margin-left: 57.5%;
+    text-align: left;
+    margin-top: 17%;
+}
+
+.sadokuTitle{
+    position: absolute;
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 1.5%;
+}

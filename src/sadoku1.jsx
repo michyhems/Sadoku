@@ -45,6 +45,9 @@ const Sadoku = ()=>{
     const bottomBorder = {
         borderBottomColor: colours().textColour
     }
+    const instructions = {
+        color: colours().textColour
+    }
 
 
     function handleKeyClick(val){
@@ -163,12 +166,7 @@ const Sadoku = ()=>{
         document.getElementById("switchLabel").style.color = modeColours.textColour
         let cells = document.getElementsByClassName("cell");
         let cells2 = document.getElementsByClassName("editCell");
-        let key;
-        for(let i = 1; i< 10; i++){
-            key = document.getElementById(i);
-            key.style.backgroundImage = modeColours.keyColour;
-            key.style.color = modeColours.keyTextColour;
-        }
+
         for(let i = 0; i<cells.length; i++){
             cells[i].style.backgroundColor = modeColours.backgroundColour;
             cells[i].style.color = modeColours.textColour;
@@ -194,16 +192,18 @@ const Sadoku = ()=>{
     return(
         <>
         <div id="daytime"></div>
+        <h1 class="sadokuTitle" style={{color:colours().textColour}}>Sadoku</h1>
         <div class="form-check form-switch" id="modeSwitch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={()=>theme==="dark"?setTheme("light"):setTheme("dark")}></input>
             <label class="form-check-label" for="flexSwitchCheckDefault" id="switchLabel">Change to {theme==="light"||theme==="default"?"dark mode":"light mode"}</label>
         </div>
+        <div class="instructions" style={{color: colours().textColour}}>Click on an empty cell to select it, then select a number from the keypad below to fill it. A number cannot be repeated in it's 3x3 segment, it's row or it's column</div>
         <div class="keyPad" id = "keyPad">
             {values.map((row, index)=>(
                 <div class="row g-0">
                     {row.map((val)=>(
                         <div class="col">
-                            <div class="key" id={val} onClick={()=>handleKeyClick(val)}>{val}</div>
+                            <div class={theme==="light"||theme==="default"?"lightKey":"darkKey"} id={val} onClick={()=>handleKeyClick(val)}>{val}</div>
                         </div>
                     ))}
                 </div>
